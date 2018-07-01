@@ -1,0 +1,21 @@
+.but{
+    background-color:#9D4949;
+}
+.vive{
+    float: left;
+    color:#FFFFFF;
+}
+.china{
+    float: left;
+    padding-top:12px;
+    color:#FFFFFF;
+}
+.viver{
+    font-family: "MicroSoft YaHei";
+}
+.viver::after{
+    display: none;
+}
+.mui-table-view-cell:hover .viver::after{
+    display: block;
+}

@@ -1,0 +1,79 @@
+/*reset css  ����Ĭ�ϵ�һЩ��ʽ  ��������Դ��  Ŀ���Ǳ��ָ����ն���ʾһ��*/
+/*���еı�ǩ��α��  before after*/
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+
+ 
+    -webkit-tap-highlight-color: transparent;
+ 
+    -webkit-box-sizing: border-box;
+ 
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "MicroSoft YaHei","sans-serif";
+	background: url("../images/base.bmp") repeat scroll top left;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+ 
+    -webkit-appearance: none;
+}
+
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix,
+.clearfix::after,
+.clearfix::before{
+    content: ".";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+.mianColor{
+    color: #d8505c;
+}
+
+[class^="icon_"]{
+    background: url("../images/sprites.png") no-repeat;
+  
+    background-size: 200px 200px;
+}
+
+.

@@ -1,0 +1,187 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.mui-content{
+    width: 100%;
+    height: 100%;
+    background: url(../images/order_bg.jpg) no-repeat 100% 100%;
+	background-size: cover;
+	position: relative;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: none;
+	position: fixed;
+	z-index: 100;
+	opacity: .9
+}
+.info{
+	top: 35%;
+	left: 50%;
+	width: 80%;
+	height: 30%;
+	z-index: 101;
+	opacity: 1.0;
+	position: fixed;
+	background-color: #fff;
+	transform: translateX(-50%);
+}
+.mui-icon-closeempty{
+	background: #fff;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	position: fixed;
+}
+.info button{
+	top: 35%;
+	left: 50%;
+	width: 80%;
+	height: 40%;
+	transform: translateX(-50%);
+	position: fixed;
+	z-index: 103;
+}
+.mui-bar{
+	background-color: #9D4949;
+}
+[class*=-icon]{
+	color: #DDDDDD;
+}
+.mui-icon-home::before{
+	padding-right: 5px;
+	border-right: 1px solid #DDD;
+}
+.mui-icon-settings::before{
+	padding-left: 5px;
+	border-left: 1px solid #DDD;
+}
+.mui-title{
+	color: #fff;
+	position: fixed;
+	font-family: "Microsoft YaHei";
+}
+.mui-numbox [class*=numbox-btn], .mui-numbox [class*=btn-numbox]{
+	font-family: "simsun";
+	font-size: 35px;
+	line-height: 30px;
+}
+[class^="mui-col"]{
+	text-align: center;
+}
+.current{
+	background-color: #F3EFEB;
+}
+.mui-row{
+	width: 100%;
+	height: 100%;
+}
+.mui-row ol{
+	height: 100%;
+}
+.mui-table-view-cell::after{
+	height: 0
+}
+.mui-col-xs-4{
+	height: 100%;
+	color: #7E7E7E;
+	font-size: 0.7rem;
+	background: url(../images/menuName_bg.gif);
+	position: fixed;
+}
+.mui-col-xs-8{
+	position: absolute;
+	right: 0;
+}
+.mui-col-xs-8>li{
+	background-color: #DFD9D9;
+	color: #5C3937;
+	border-bottom: 1px solid #B3ABA9;
+}
+.mui-footer{
+	width: 100%;
+	height: 100%;
+}
+.mui-table-view{
+	background: transparent;
+}
+.mui-table-view::before{
+	height: 0;
+}
+li.mui-table-view-cell.mui-media{
+	padding: 15px 15px;
+	position: relative;
+}
+li.mui-table-view-cell.mui-media::after{
+	height: 1px;
+}
+.mui-table-view .mui-media-object{
+	max-width: 65px;
+	height: 65px;
+}
+.mui-media-body{
+	color: #42361E;
+	font-size: .9rem;
+	text-align: left;
+}
+.mui-media-body p{
+	font-size: .5rem;
+}
+.mui-media-body p:nth-of-type(2){
+	color: #FF0000;
+}
+.mui-numbox{
+	bottom: 15px;
+	right: 10px;
+	padding: 0;
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	border-color: #B3ABAA;
+	border: none;
+}
+.mui-btn.mui-numbox-btn-minus, .mui-btn.mui-numbox-btn-plus{
+	width: 33.33333%;
+	height: 100%;
+	margin: 0;
+	border: none;
+	background: #DFD9D9;
+}
+.mui-btn.mui-numbox-btn-minus{
+	border-right: 1px solid #B3ABAA;
+	display: none;
+}
+.mui-btn.mui-numbox-btn-plus{
+	border: 1px solid #B3ABAA;
+	border-radius: 3px;
+	display: block;
+}
+.mui-numbox .mui-numbox-input, .mui-numbox .mui-input-numbox{
+	display: none;
+	background: #DFD9D9
+}
+.mui-numbox .mui-numbox-input, .mui-numbox .mui-input-numbox{
+	padding:0 28px !important;
+}
+.mui-footer{
+	position: fixed;
+	top: 540px;
+	text-align: center;
+	background-color: #DFD9D9;
+	display: none;
+}
+.mui-footer span{
+	display: block;
+	padding: 10px 0;
+	border-bottom: 1px solid #B3ABA9;
+}
+.mui-footer span s{
+	text-decoration: none;
+	color: #FF0000;
+}
+.mui-footer button{
+	margin-top: 12px;
+}

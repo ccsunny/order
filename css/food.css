@@ -1,0 +1,605 @@
+.mui-table-view:after{
+	height: 0;
+}
+.mui-bar {
+	background: #993333;
+	z-index: 500;
+}
+.mui-title{
+	color: white;
+	font-family: "微软雅黑";
+}
+
+ .mui-media-object.mui-pull-left{
+	background: red;
+}
+
+
+.mui-action-back{
+	color: white;
+}
+.mui-input-group{
+	margin-top: 4rem;
+}
+.mui-bar span{
+	color: white;
+	float: right;
+}
+nav{
+	width: 100%;
+	margin-top: 2.8rem;
+	height: 3rem;
+	background-color: #dfdad9;
+	padding: 0;
+	z-index: 400;
+	
+}
+#slider{
+	z-index: 400;
+}
+#change>a{
+	color: #5c3937 ;
+}
+
+.mui-control-item.mui-active{
+	background-color: #9d4949 !important;
+	color: white !important;
+}
+.mui-segmented-control.mui-scroll-wrapper{
+	height: 2.6rem;
+	margin:0 auto;
+}
+#segmented{
+	position: relative;
+	padding: 0;
+	z-index: 400 !important;
+}
+#segmented >div{
+	position: absolute;
+	top:0.36rem;
+	left: 50%;
+	/*width:7rem;*/
+	margin-left: -4.5rem;
+	line-height: 3rem;
+	border: 0.08rem solid #9d4949;
+	padding:0;
+}
+#segmented >div>a{
+	display: block;
+	line-height: 2.2rem;
+	float: left;
+}
+.mui-slider-group .iimg{
+	width: 4.5rem;
+	height: 4.5rem;
+	background: #9d4949 ;
+	
+}
+.mui-table-view:before {
+	position: absolute;
+    right: 0;
+    left: 0;
+    content: '';
+    height: 0px;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    top: -1px;
+}
+#item1mobile>.mui-table-view>.mui-table-view-cell{
+	position: relative;
+    overflow: hidden;
+    padding:0px 15px;
+}
+.mui-table-view .mui-media, .mui-table-view .mui-media-body{
+	font-size: 0.9rem;
+	margin: 0.2rem 0;
+	position: relative;
+}
+.mui-table-view .mui-media-object{
+	max-width: 7rem;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-scroll{
+	height: 2.2rem;
+}
+.mui-media-body>span{
+	display: inline-block;
+	margin-bottom: 0.2rem;
+}
+.mui-media-body>i{
+	display: inline-block;
+	margin: 0 0.5rem;
+}
+.mui-media-body>em{
+	display: inline-block;
+	float: right;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+.mui-table-view-cell>a:not(.mui-btn){
+	color: #8f8f94;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0px;
+	color: #42361e;
+	margin-bottom: 0.5rem;
+}
+.mui-h5, h5{
+	font-size: 1rem;
+	font-weight: 900;
+}
+.food-win{
+	width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    display: none;
+   
+}
+.food-win .win-box{
+    width: 80%;
+    height: 13.5rem;
+    background: white;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+   overflow: hidden;
+}
+.food-win .win-box .win-header{
+	width: 100%;
+	height:2rem;
+	line-height: 2rem;
+	background-color: gainsboro;
+	text-align: center;
+	
+}
+.food-win .win-box .win-header h3{
+	display: inline-block;
+	color: orangered;
+	margin-top: 0.3rem;
+}
+.food-win .win-box .win-header span{
+	display: inline-block;
+	float: right;
+	margin: 0.2rem;
+	
+}
+.food-win .win-box .iimg{
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	overflow: hidden;
+}
+.food-win .win-box .iimg img{
+	margin-top:1rem;
+}
+#eins{
+	width: 100%;
+	height: 8rem;
+}
+/*内容2*/
+#zwei{
+	padding: 0;
+	height:13rem;
+}
+.currentposition{
+	width: 100%;
+	background: ghostwhite;
+	height: 2.6rem; 
+	line-height: 2.6rem;
+	padding:0 1rem;
+	vertical-align: middle;
+	color: black;
+}
+.currentposition>i{
+	display: block;
+	float: left;
+	font-style: normal;
+}
+.currentposition>.position{
+	display: inline-block;
+	float: right;
+	width: 2.6rem;
+	height: 2.2rem;
+	line-height: 2.6rem;
+	position: relative;
+	margin-top:0.4rem;
+}
+/*内容2地图*/
+.pin {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50% 50% 50% 0;
+  /*background: #89849b;*/
+ background: orange;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 39%;
+  top: -7%;
+  /*margin: -22px 0 0 -44px;*/
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  -ms-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.pin:after {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.28rem 0 0 0.22rem;
+  /*background: #2f2f2f;*/
+ background: white;
+  position: absolute;
+  border-radius: 50%;
+}
+.pulse {
+  /*background: rgba(0,0,0,0.2);*/
+ background: orange;
+  border-radius: 50%;
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  right:29%;
+  top: 34%;
+  /*margin: 11px 0px 0px -12px;*/
+  -webkit-transform: rotateX(55deg);
+  -moz-transform: rotateX(55deg);
+  -o-transform: rotateX(55deg);
+  -ms-transform: rotateX(55deg);
+  transform: rotateX(55deg);
+  /*z-index: -2;*/
+}
+.pulse:after {
+  content: "";
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  margin: -9px 0 0 -11px;
+  -webkit-animation: pulsate 1s ease-out;
+  -moz-animation: pulsate 1s ease-out;
+  -o-animation: pulsate 1s ease-out;
+  -ms-animation: pulsate 1s ease-out;
+  animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  /*-webkit-box-shadow: 0 0 1px 2px #89849b;*/
+  -webkit-box-shadow: 0 0 1px 2px orange;
+ 
+  /*box-shadow: 0 0 1px 2px #89849b;*/
+  box-shadow: 0 0 1px 2px orange;
+ 
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  -o-animation-delay: 1.1s;
+  -ms-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+@-moz-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@-o-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -o-transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  50% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-2000px) rotate(-45deg);
+    -moz-transform: translateY(-2000px) rotate(-45deg);
+    -o-transform: translateY(-2000px) rotate(-45deg);
+    -ms-transform: translateY(-2000px) rotate(-45deg);
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+  60% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    -moz-transform: translateY(30px) rotate(-45deg);
+    -o-transform: translateY(30px) rotate(-45deg);
+    -ms-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+  }
+  80% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-2000px) rotate(-45deg);
+    -moz-transform: translateY(-2000px) rotate(-45deg);
+    -o-transform: translateY(-2000px) rotate(-45deg);
+    -ms-transform: translateY(-2000px) rotate(-45deg);
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+  60% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    -moz-transform: translateY(30px) rotate(-45deg);
+    -o-transform: translateY(30px) rotate(-45deg);
+    -ms-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+  }
+  80% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-2000px) rotate(-45deg);
+    -moz-transform: translateY(-2000px) rotate(-45deg);
+    -o-transform: translateY(-2000px) rotate(-45deg);
+    -ms-transform: translateY(-2000px) rotate(-45deg);
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+  60% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    -moz-transform: translateY(30px) rotate(-45deg);
+    -o-transform: translateY(30px) rotate(-45deg);
+    -ms-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+  }
+  80% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transform: translateY(-2000px) rotate(-45deg);
+    -moz-transform: translateY(-2000px) rotate(-45deg);
+    -o-transform: translateY(-2000px) rotate(-45deg);
+    -ms-transform: translateY(-2000px) rotate(-45deg);
+    transform: translateY(-2000px) rotate(-45deg);
+  }
+  60% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    -moz-transform: translateY(30px) rotate(-45deg);
+    -o-transform: translateY(30px) rotate(-45deg);
+    -ms-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+  }
+  80% {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -moz-transform: translateY(-10px) rotate(-45deg);
+    -o-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+  }
+}
+
+/*内容2地图结束*/
+/*.currentposition>span{
+	line-height: 2.6rem;
+	display: block;
+	float: right;
+	vertical-align: middle;
+}*/
+.mui-table-view-cell{
+	position: relative;
+	overflow:visible !important;
+}
+.box{
+	width: 46%;
+	height:8rem;
+	padding:1.5rem ;
+	padding-right:0;
+	display: inline-block;
+	text-align: center;
+}
+.box .small{
+	width: 100%;
+	height: 90%;
+	display: inline-block;
+}
+.box .small img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
+     margin-right: -5.5rem; 
+     }
+     
+#item1mobile>.mui-table-view>.mui-table-view-cell {
+	padding:0px;
+}    
+   
+     
+/*购物车*/
+.shop{
+	z-index: 50;
+	position: fixed;
+	right:0;
+	top:30rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/dan/shop1_02.jpg) no-repeat center center ;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+

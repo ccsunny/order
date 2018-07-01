@@ -1,0 +1,76 @@
+.but{
+    background: #9D4949;
+}
+.f_left{
+    display: block;
+    float: right;
+    padding-top: 0.7rem;
+
+}
+.f_left a{
+    color: #FFFFFF;
+    display: block;
+    float: right;
+
+}
+.color{
+    color: #FFFFFF;
+    position: absolute;
+}
+.buttom{
+    display: block;
+    position: relative;
+}
+.buttom a{
+    float: left;
+}
+.color img{
+    position: relative;
+    top: 0.5rem;
+    left: 0;
+}
+.body{
+    background-color: #EDCFB9;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.body input{
+    width: 15rem;
+    height: 2rem;
+    position: relative;
+    top: 0.6rem;
+    left:2rem;
+    background-color: #DFD9D9;
+}
+.body button{
+    position: relative;
+    top: 0.6rem;
+    left: 2rem;
+    color: #FFF;
+    background-color: #99072B;
+}
+.function{
+    width: 100%;
+    height: 3rem;
+    background-color: #DFD9D9;
+    z-index: 1000;
+    margin-top: 12%;
+
+}
+.function p{
+    float: left;
+    line-height: 360%;
+    padding-left: 5%;
+}
+.function img{
+    float: right;
+    padding-top: 2.5%;
+    padding-right: 5%;
+}
+.body_01{
+    background-color: #DFD9D9;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,382 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: url(../images/bg.png);
+}
+
+
+/*top  B*/
+
+.order_confirm {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0.6rem;
+	background-color: #9d4949;
+}
+
+.order_confirm a {
+	padding-left: 0.3rem;
+	display: block;
+	width: 0.1rem;
+	height: 0.6rem;
+	background: url(../images/back.png) no-repeat center;
+	background-size: 0.1rem 0.18rem;
+}
+
+.order_confirm h4 {
+	font-size: 0.18rem;
+	font-weight: normal;
+	position: absolute;
+	top: 0.18rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #FFF;
+}
+
+
+/*top  B*/
+
+
+/*info  B*/
+
+.order_info {
+	position: relative;
+	width: 100%;
+	height: 0.7rem;
+	background-color: #eecfba;
+}
+
+.order_info .info_left {
+	left: 0.1rem;
+	top: 0.1rem;
+	position: absolute;
+}
+
+.info_left .name {
+	font-size: 0.16rem;
+	color: #7b6955;
+}
+
+.info_left .addr {
+	font-size: 0.12rem;
+	color: #b1565c;
+}
+
+.order_info a {
+	margin-top: 0.22rem;
+	right: 0.1rem;
+	position: absolute;
+	font-size: 0.14rem;
+	border-radius: 0.02rem;
+	border: 2px solid #b66976;
+	color: #b66976;
+	background-color: #FFF;
+	display: block;
+	width: 0.8rem;
+	height: 0.3rem;
+	line-height: 0.28rem;
+	text-align: center;
+}
+
+
+/*info  E*/
+
+
+/* desTime  B*/
+
+.desTime,.order_disc,.order_requires {
+	padding-left: 0.1rem;
+	position: relative;
+	width: 100%;
+	height: 0.7rem;
+	background: url(../images/bg.png);
+	border-bottom: 1px solid #ccc;
+}
+
+.desTime span,.order_disc span,.order_requires span {
+	font-size: 0.14rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.first {
+	color: #ccc;
+}
+
+.desTime .ddlType {
+	position: absolute;
+	top: 0.15rem;
+	right: 0.1rem;
+	width: 2.1rem;
+	height: 0.4rem;
+	background-color: #dfdad9;
+}
+
+.day {
+	color: #62594a;
+	right: 1.8rem;
+}
+
+.time {
+	color: #62594a;
+	right: 0.8rem;
+}
+
+.trig {
+	position: absolute;
+	right:0.2rem;
+	width: 0.1rem;
+	height: 0.06rem;
+	display: block;
+	background: url(../images/trig3_03.png) no-repeat;
+	background-size: 0.1rem 0.06rem;
+}
+
+.order_disc_left{
+	width:100%;
+	height: 0.7rem;
+	position: relative;
+
+}
+.order_disc_left a{
+	font-size: 0.14rem;
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	display:block;
+	border-radius:0.02rem;
+	line-height: 0.4rem;
+	color:#333;
+	height:0.4rem;
+	text-align: center;
+	background-color: #dfdad9;
+}
+
+
+.order_disc_left a:nth-of-type(1){
+	width:0.5rem;
+	left:0.8rem;
+	
+}
+.order_disc_left a:nth-of-type(2){
+	width:0.7rem;
+	left:1.4rem;
+
+}
+.active::before{
+	content:'';
+	position: absolute;
+	width:0.2rem;
+	height:0.14rem;
+	right:0;
+	bottom: 0;
+	background: url(../images/trig.png) no-repeat;
+	background-size:0.2rem 0.15rem;
+}
+
+.order_disc>a{
+	display:block;
+	position: absolute;
+	right:0.2rem;
+    top:50%;
+	transform:translateY(-50%);
+    background: url(../images/rigth_trig.png) no-repeat;
+    background-size:0.1rem 0.18rem;
+    width:0.1rem;
+    height:0.18rem;
+}
+/* desTime  E*/
+
+/*other  requires B*/
+.order_requires_right{
+	color:#62594a;
+	padding-left: 0.1rem;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.1rem;
+	width: 2.1rem;
+	height: 0.4rem;
+	background-color: #dfdad9;
+}
+.order_requires_right a{
+	display:block;
+	position: absolute;
+	right:0.2rem;
+    top:50%;
+    transform:translateY(-50%);
+    background: url(../images/r_trig.png) no-repeat;
+ 	background-size:0.1rem 0.18rem;
+    width:0.1rem;
+    height:0.18rem;
+}
+/*other  requires E*/
+
+/*menu  B*/
+.order_menu{
+	width:100%;
+}
+.order_menu .price{
+	color:red;
+	font-size: 0.12rem;
+}
+.order_menu_list
+{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    background:url(../images/bg.png);
+}
+
+.order_menu_list .mui-media-large .
+{
+    line-height: 0.8rem;
+    max-width: 0.8rem;
+    height: 0.8rem;
+}
+.order_menu_list .mui-media .mui-subtitle
+{
+    color: #000;
+}
+.order_menu_list .mui_img
+{
+    line-height: 0.6rem;
+    max-width: 0.6rem;
+    height: 0.6rem;
+}
+.order_menu_list .mui_img.mui-pull-left
+{
+    margin-right: 0.1rem;
+}
+.order_menu_list .mui_img.mui-pull-right
+{
+    margin-left: 0.1rem;
+}
+.order_menu_list .mui-table-view-cell.mui-media-icon .mui_img
+{
+    line-height: 0.29rem;
+
+    max-width: 0.29rem;
+    height: 0.29rem;
+    margin: -0.04rem 0;
+}
+.order_menu_list .mui-table-view-cell.mui-media-icon .mui_img img
+{
+    line-height: 0.29rem;
+
+    max-width: 0.29rem;
+    height: 0.29rem;
+}
+.order_menu_list .mui-table-view-cell.mui-media-icon .mui_img.mui-pull-left
+{
+    margin-right: 0.1rem;
+}
+.order_menu_list .mui-table-view-cell.mui-media-icon .mui_img .mui-icon
+{
+    font-size: 0.29rem;
+}
+.order_menu_list .mui-table-view-cell.mui-media-icon .mui-media-body:after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0.55rem;
+
+    height: 0.01rem;
+
+    content: '';
+    -webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+
+    background-color: #c8c7cc;
+}
+
+.mui-media-body p:first-child{
+	color:#000;
+	font-size: 0.18rem;
+}
+.mui-media-body p:nth-child(2){
+	font-size: 0.14rem;
+}
+.numBox{
+	position: absolute;
+	right:0.1rem;
+	bottom:0.05rem;
+	height:0.4rem;
+}
+.numBox span{
+	font-family: "宋体";
+	color:#b3abaa;
+	font-size:0.4rem;
+	display:block;
+	width:0.3rem;
+	height:0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	background-color: #dfdad9;
+	float: left;
+	border-top-left-radius:0.02rem ;
+	border-bottom-left-radius:0.02rem ;
+	border: 1px solid rgba(0, 0, 0, .2)
+}
+.numBox input{
+	font-size: 0.2rem;
+	text-align: center;
+	background-color: #dfdad9;
+	padding: 0;
+	margin-bottom: 0;
+	width:0.25rem;
+	height:0.3rem;
+	line-height: 0.3rem;
+	float: left;
+	border-radius:0;
+	border-left: none;
+	border-right: none;
+}
+/*menu  E*/
+
+/* order create B*/
+.countMoney{
+	text-align: center;
+	width:100%;
+	height:0.5rem;
+	line-height: 0.5rem;
+	border-top: 1px solid #b3abaa;
+	border-bottom:  1px solid #b3abaa;
+	background-color: #dfdad9;
+	font-size: 0.16rem;
+	color:#42361e;
+}
+.countMoney span:nth-child(2){
+	font-weight: bold;
+	color:red;
+	font-size:0.2rem;
+}
+.order_submit{
+	position: relative;
+	width:100%;
+	height:0.7rem;
+	background-color: #dfdad9;
+	text-align: center;
+}.order_submit a{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%) translateY(-50%);
+	display:block;
+     width:0.88rem;
+     height:0.3rem;
+     line-height: 0.3rem;
+     text-align: center;
+     background-color: #9a082c;
+     color:#FFF;
+     font-size: 0.16rem;
+}
+
+/* order create E*/

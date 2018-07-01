@@ -1,0 +1,207 @@
+.mui-bar {
+	width:100%;
+	height:2.6rem;
+}
+header{
+	border:0;
+}
+.mui-action-back{
+	color: black;
+}
+.mui-input-group{
+	margin-top: 4rem;
+}
+.mui-bar div{
+	display: inline-block;
+	width:80%;
+	height: 90%;
+	line-height: 2.6rem;
+	position: relative;
+	margin:0.25rem;
+}
+.mui-bar span{
+	color: darkgray;
+	float: left;
+	display: inline-block;
+	position: absolute;
+	top:-0.3rem;
+	left:0.4rem;
+}
+.mui-bar input{
+	display: inline-block;
+	width:100%;
+	border-radius: 1.8rem;
+	height: 90%;
+	padding-left:1.8rem;
+	padding-top: 0.8rem;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: ghostwhite;
+}
+.mui-bar i{
+	float: right;
+	display: inline-block;
+	line-height: 2.6rem;
+	font-style:normal;
+	color: orange;
+	margin-right: 0.5rem;
+}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+	margin-bottom: 0;
+}
+.mui-bar{
+	position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+	padding-right: 10px;
+    padding-left: 10px;
+    backface-visibility: hidden;
+}
+.history{
+	width: 100%;
+	height:5.5rem;
+	margin-top:2.6rem;
+	padding:0 0.8rem;
+	background: white;
+}
+.history h5{
+	width: 80%;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	float: left;
+	display: inline-block;
+}
+#remove{
+	display: inline-block;
+	float: right;
+	font-size: 1.4rem;
+	line-height: 2.6rem;
+}
+.ht{
+	width: 100%;
+	height:2rem;
+	font-size: 0.8rem;
+	border-top:1px solid gainsboro;
+	display: inline-block;
+	padding-top:0.6rem;
+}
+.ht>a{
+	color: black;
+}
+.ht>a:hover{
+	color: orange;
+	border-color: orange;
+}
+.ht>span{
+	font-size: 0.8rem;
+}
+.jiao{
+	width: 32%;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	display: inline-block;
+	margin-right:0.5rem;
+	border: 1px solid gainsboro;
+}
+.paigu{
+	width: 24%;
+	display: inline-block;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin-right:0.5rem;
+	border: 1px solid gainsboro;
+}
+.dao{
+	width: 20%;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid gainsboro;
+}
+.search{
+	margin-top: 1rem;
+	background: white;
+	padding:0.4rem 1rem;
+	padding-bottom: 0.2rem;
+}
+.search img{
+	display: inline-block;
+	float: left;
+	width:2rem ;
+	height:2rem;
+	border-radius: 50%;
+	margin-right: 0.5rem;
+}
+.search span{
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+.search>h5{
+	margin-bottom: 0.5rem;
+}
+.line>div{
+	width: 100%;
+	height:1.5rem;
+	margin:0.1rem 0;
+}
+.line .line1 b{
+	display: inline-block;
+	padding:0
+	width: 1rem;
+	height: 1rem;
+	background: orangered;
+	color: white;
+	margin-right: 0.5rem;
+	margin-left: 0.3rem;
+	font-weight: normal;
+	font-size: 0.8rem;
+}
+.line .line2 b{
+	display: inline-block;
+	padding:0
+	width: 1rem;
+	height: 1rem;
+	background: plum;
+	color: white;
+	margin-right: 0.5rem;
+	margin-left: 0.3rem;
+	font-weight: normal;
+	font-size: 0.8rem;
+}
+.line .line3 b{
+	display: inline-block;
+	padding:0
+	width: 1rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: hotpink;
+	color: white;
+	margin-right: 0.5rem;
+	margin-left: 0.3rem;
+	font-weight: normal;
+	font-size: 0.8rem;
+}
+.line  i{
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	display: inline-block;
+	width: 13rem;
+	height: 1.2rem;
+	color: black;
+	margin-right: 0.5rem;
+	font-style: normal;
+}
+.search>p{
+	margin-top:0.6rem;	
+	text-align: center;
+	color: orange;
+}
+.orange{
+	border-color: orange;
+	color: orange;
+}
+

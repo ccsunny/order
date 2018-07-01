@@ -1,0 +1,95 @@
+header.mui-bar{
+    background-color: #9D4949;
+    position: static;
+ 
+}
+header.mui-bar  h1{
+    font-size: 20px;
+    color: #fff;
+}
+header.mui-bar .mui-pull-left {
+    color: #fff;
+}
+.mui-slider .mui-slider-group{
+	position: relative;
+}
+.mui-slider .mui-slider-group .mui-slider-item{
+	height: 160px;
+}
+.mui-slider .re-name{
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	
+}
+.mui-slider .re-name img{
+	height: 60px;
+	width: 60px;
+    vertical-align: middle;
+    border-radius: 30px;
+  
+}
+
+.mui-slider .re-name span{
+	padding-left:10px ;
+	color: #fff;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.mui-table-view{
+	background: url("../images/base.bmp") repeat scroll top left;
+	height: 90px;
+}
+.mui-table-view li a p{
+	color: #B5B4B2;
+	font-size: 14px;
+}
+.mui-table-view li a .mui-media-object{
+	height: 64px;
+	min-width: 64px;
+	
+}
+.price-time{
+	width: 100%;
+	height: 62px;
+	background-color: #DFD9D9;
+	border-bottom: 1px solid #BEBAB9;
+	border-top: 1px solid #BEBAB9;
+}
+.price-time div a img{
+	margin-top:14px ;
+	margin-left:12px ;
+	margin-right:10px ;
+}
+.price-time .pt-left{
+	border-right: 2px solid #BEBAB9;
+	width: 50%;
+	
+}
+.price-time .pt-left .red{
+	margin-top: 8px;
+	font-size: 18px;
+	color:#98445B ;
+}
+.price-time .pt-left p{
+	font-size: 14px;
+	margin-top:-8px ;
+	color: #ADA7A7;
+}
+#mui-content{
+	padding-top: 10px;
+}
+#mui-content .mui-row .mui-col-xs-12{
+	border-bottom: 1px solid #E2E2E2;
+}
+
+#mui-content .con-red{
+	margin-top: 30px;
+	margin-left:10px ;
+	color: #534344;
+}
+
+
+
+
+

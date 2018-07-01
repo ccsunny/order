@@ -1,0 +1,130 @@
+
+/*头部*/
+
+
+header .icon-jiantou-copy:before {
+	font-family: "iconfont";
+	font-size: 0.24rem;
+	line-height: 1;
+	position: absolute;
+	top: 0.24rem;
+	right: 0.3rem;
+	display: inline-block;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-decoration: none;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*导航栏*/
+
+.rec_nav {
+	width: 100%;
+	background-color: #dfdad9;
+	position: absolute;
+	top: 1rem;
+}
+
+.rec_nav .mui-table-view {
+	width: 100%;
+	float: left;
+}
+
+.rec_nav .mui-table-view .mui-table-view-cell {
+	width: 33.3333%;
+	float: left;
+}
+
+.rec_nav .mui-table-view:after {
+	height: 0px;
+}
+
+.rec_nav .mui-table-view-cell {
+	border-bottom: 1px solid #b3abaa;
+	border-left: 1px solid #b3abaa;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+}
+
+.rec_nav .mui-table-view-cell.no_border {
+	border-left: none;
+}
+
+.rec_nav .mui-table-view-cell.mui-active {
+	background-color: #dfdad9;
+	border-bottom: 1px solid #b3abaa;
+}
+
+.rec_nav .mui-table-view-cell.mui-collapse.mui-active {
+	margin-top: 0px;
+	overflow: visible;
+}
+
+.rec_nav .mui-table-view-cell> a:not(.mui-btn) {
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin: 0;
+	color: #5c3937;
+	font-size: 0.25rem;
+}
+
+.rec_nav .mui-table-view-cell:nth-child(3).mui-active .mui-collapse-content {
+	margin-left: -200%;
+}
+
+.rec_nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*导航栏遮罩*/
+
+.mui-popover .mui-popover-arrow {
+	width: 0;
+}
+
+.mui-popover {
+	top: 0.8rem !important;
+	left: 0 !important;
+	border-radius: 0;
+	webkit-box-shadow: none;
+	box-shadow: none;
+	width: 100%;
+}
+
+.rec_nav .mui-popover .mui-collapse-content {
+	background-color: #dfdad9;
+}
+
+.rec_nav .mui-popover .mui-collapse-content a {
+	font-size: 0.25rem;
+	text-align: left;
+	display: block;
+	color: #42361e;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-top: 1px solid #b3abaa;
+	padding-left: 0.3rem;
+}
+
+
+/*主体内容*/
+.mui-bar-nav~ .mui-content {
+	padding-top: 1.8rem;
+}
+
+.rec_container .finished {
+	height: 1.42rem;
+	text-align: center;
+}
+
+.finished h3 {
+	color: #b3abaa;
+	font-size: 0.25rem;
+	font-weight: normal;
+	margin-top: 0.3rem;
+}

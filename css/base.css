@@ -1,0 +1,105 @@
+/*reset css*/
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	color: #333;
+	font-size: 14px;
+	font-family: "MicroSoft YaHei", "sans-serif";
+}
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	color: #333;
+}
+input, textarea{
+	border: none;
+	outline: none;
+	resize: none;
+	-webkit-appearance: none;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.clearfix::before, .clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.m_t10{
+	margin-top: 10px;
+}
+.m_r10{
+	margin-right: 10px;
+}
+.m_b10{
+	margin-bottom: 10px;
+}
+.m_l10{
+	margin-left: 10px;
+}
+[class^="icon_"]{
+	background: url(../images/sprites.png) no-repeat;
+	background-size: 200px 200px;
+}
+.jd_topMenu{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	position: relative;
+	background-size: 1px 44px;
+	border-bottom: 1px solid #e0e0e0;
+	background: url(../images/header-bg.png) repeat-x;
+}
+.jd_topMenu [class^="icon_"]{
+	top: 0;
+	width: 40px;
+	height: 44px;
+	display: block;
+	padding: 12px 10px;
+	position: absolute;
+	background-clip: content-box;
+	background-origin: content-box;
+}
+.icon_back{
+	left: 0;
+	background-position: -20px 0;
+}
+.jd_topMenu h3{
+	font-size: 16px;
+	line-height: 44px;
+	text-align: center;
+	font-weight: normal;
+}
+.jd_topMenu form{
+	width: 100%;
+	padding: 0 40px;
+}
+.jd_topMenu form input{
+	width: 100%;
+	height: 30px;
+	margin-top: 7px;
+	border-radius: 2px;
+	border: 1px solid #e0e0e0;
+}
+.icon_type{
+	right: 0;
+	background-position: -60px 0;
+}

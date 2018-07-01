@@ -1,0 +1,141 @@
+@keyframes flash{
+	0%{
+		opacity: .8
+	}
+	50%{
+		opacity: .4
+	}
+	100%{
+		opacity: .8
+	}
+}
+html{
+	overflow: hidden;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.headphoto{
+	width: 100px;
+	height: 100px;
+	display: block;
+	border-radius: 50%;
+	margin: 70px auto;
+}
+.mui-scroll span{
+	text-align: center;
+	display: block;
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mui-content{
+    width: 100%;
+    height: 100%;
+    background: url(../images/index_bg.jpg) no-repeat 100% 100%;
+	background-size: cover;
+}
+.mui-bar{
+	background-color: #9D4949;
+}
+.mui-title{
+	color: #fff;
+	font-family: "Microsoft YaHei";
+}
+[class*=-icon]{
+	color: #DDDDDD;
+}
+.mui-content{
+	position: relative;
+}
+.circle{
+	right: 0;
+	top: 150px;
+	width: 215px;
+	height: 374px;
+	position: absolute;
+	background: url(../images/nav_foodbg.gif) no-repeat;
+	background-size: 215px 374px;
+}
+[class^=food_0]{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	background: url(../images/nav_bg.gif) no-repeat;
+	background-size: 75px 75px;
+}
+[class^=food_0] a{
+	animation: flash 2s infinite;
+}
+.food_01{
+	top: 130px;
+	right: 100px;
+}
+.food_02{
+	top: 195px;
+	right: 185px;
+}
+.food_03{
+	top: 305px;
+	right: 215px;
+}
+.food_04{
+	top: 415px;
+	right: 185px;
+}
+.food_05{
+	top: 480px;
+	right: 100px;
+}
+.menu{
+	top: -50px;
+	position: relative;
+}
+.menu a{
+	width: 40px;
+	height: 40px;
+	top: 14px;
+	left: 17px;
+	position: absolute;
+	z-index: 100;
+	display: block;
+	background: url(../images/sprite.gif) no-repeat;
+	background-size: 330px 45px
+}
+.food_01 a{
+	background-position: 0 0;
+}
+.food_02 a{
+	background-position: -70px 0;
+}
+.food_03 a{
+	background-position: -135px 0;
+}
+.food_04 a{
+	background-position: -205px 0;
+}
+.food_05 a{
+	background-position: -282px 0;
+}
+.menu span{
+	top: 15px;
+	left: -75px;
+	display: block;
+	position: absolute;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #9D4949;
+	text-align: right;
+}
+.food_02 span{
+	left: -55px;
+}
+.food_03 span{
+	left: -55px;
+}
+.menu span s{
+	color: #5C3937;
+	font-size: .5rem;
+	text-decoration: none;
+}

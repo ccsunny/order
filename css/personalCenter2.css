@@ -1,0 +1,263 @@
+@keyframes flash{
+	0%{
+		opacity: .8
+	}
+	50%{
+		opacity: .4
+	}
+	100%{
+		opacity: .8
+	}
+}
+html{
+	overflow: hidden;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+ul {
+	list-style: none;
+}
+
+/*字体图标*/
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.mui-off-canvas-left {
+	height: 100%;
+}
+.leftScroll {
+	height: 100%;
+}
+.porsonal1 {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.porsonal1 .loginBox {
+	background-color: #5c3937;
+	height:14%;
+}
+
+.porsonal1 .psCenter {
+	font-size: 16px;
+	color: #b3abaa;
+	height: 100%;
+	padding: .25rem;
+}
+.login_box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.login_box img {
+	height: 1rem;
+	float: left;
+	margin-right: .1rem;
+}
+.login_box .info {
+	height: 100%;
+	float: left;
+}
+.login_box .info  p:first-of-type{
+	font-size: .3rem;
+	line-height: .4rem;
+}
+.login_box .info  p:last-of-type{
+	font-size: .26rem;
+	line-height: .35rem;
+}
+.login_box .login {
+	background-color: #9a082c;
+	border: none;
+	width: 1.2rem;
+	height: .4rem;	
+	border-radius: 5px;
+	text-align: center;
+	font-size: .25rem;
+	line-height: .4rem;
+	color: #fff;
+	position: absolute;
+	bottom: .1rem;
+	right: 0;
+}
+.personanList {
+	background: #625850;
+	height: 72%;
+}
+.personanList li {
+	height: 9.1%;
+	line-height: 100%;
+}
+
+.personanList li a {
+	color: #b3abaa!important;
+	font-size: .3rem;
+	line-height: 100%;
+}
+.personanList li a span {
+	margin-right: .2rem;
+	font-size: .42rem;
+}
+.mui-navigate-right .number {
+	width: .34rem;
+	height: .34rem;
+	font-size: .25rem;
+	font-style: normal;
+	padding: 0;
+	text-align: center;
+	line-height: .34rem;
+}
+.title {
+	background-color: #9d4949;
+}
+.mui-action-menu {
+	color: #fff;
+}
+.exitBox {
+	width: 100%;
+	height: 14%;
+	background: #625850;
+	position: relative;
+}
+.exit {
+	background-color: #9a082c;
+	width: 2.6rem;
+	height: .8rem;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.3rem;
+	margin-top: -.4rem;
+	font-size: .4rem;
+}
+
+.mui-content{
+    width: 100%;
+    height: 100%;
+    background: url(../images/pics/index_bg.jpg) no-repeat 100% 100%;
+	background-size: cover;
+}
+.mui-bar{
+	background-color: #9D4949;
+}
+.mui-title{
+	color: #fff;
+	font-family: "Microsoft YaHei";
+}
+[class*=-icon]{
+	color: #DDDDDD;
+}
+.mui-content{
+	position: relative;
+}
+.circle{
+	right: 0;
+	top: 2.6rem;
+	width: 3.5rem;
+	height: 6.2rem;
+	position: absolute;
+	background: url(../images/pics/nav_foodbg.gif) no-repeat;
+	background-size: 3.5rem 6.2rem;
+}
+[class^=food_0]{
+	width: 1.3rem;
+	height: 1.3rem;
+	position: absolute;
+	background: url(../images/pics/nav_bg.gif) no-repeat;
+	background-size: 1.3rem 1.3rem;
+}
+[class^=food_0] a{
+	animation: flash 5s infinite;
+}
+.food_01{
+	top: 1.6rem;
+	right: 1.8rem;
+}
+.food_02{
+	top: 3.1rem;
+	right: 3.1rem;
+}
+.food_03{
+	top: 4.9rem;
+	right: 3.6rem;
+}
+.food_04{
+	top: 6.6rem;
+	right: 3.1rem;
+}
+.food_05{
+	top: 8rem;
+	right: 1.8rem;
+}
+.menu{
+	top: -50px;
+	position: relative;
+}
+.menu a{
+	width: 1.2rem;
+	height: 1.2rem;
+	top: .2rem;
+	left: .2rem;
+	position: absolute;
+	z-index: 100;
+	display: block;
+	background: url(../images/pics/sprite.gif) no-repeat;
+	background-size: 5.8rem .8rem
+}
+.food_01 a{
+	background-position:.1rem 0;
+}
+.food_02 a{
+	background-position: -1.1rem 0;
+}
+.food_03 a{
+	background-position: -2.3rem 0;
+}
+.food_04 a{
+	background-position: -3.5rem 0;
+}
+.food_05 a{
+	background-position: -4.85rem 0;
+}
+.menu span{
+	top: .24rem;
+	left: -1.8rem;
+	display: block;
+	position: absolute;
+	font-size: .35rem;
+	font-weight: 700;
+	color: #9D4949;
+	text-align: right;
+}
+.food_02 span{
+	left: -1.15rem;
+}
+.food_03 span{
+	left: -1.15rem;
+}
+.menu span s{
+	color: #5C3937;
+	font-size: .3rem;
+	text-decoration: none;
+}
