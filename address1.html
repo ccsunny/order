@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>地址管理</title>
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+		.mui-top {
+			/*position: fixed;*/
+			z-index: 10;
+			right: 0;
+			left: 0;
+			height: 3rem;
+			padding-right: 0.5rem;
+			padding-left: 0.5rem;
+			border-bottom: 0;
+			background-color: #9D4949;
+			-webkit-box-shadow: 0 0 0.05rem rgba(0, 0, 0, .85);
+			box-shadow: 0 0 0.05rem rgba(0, 0, 0, .85);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+		.mui-tit {
+			font-size: 1.3rem;
+			font-weight: 500;
+			line-height: 3.5rem;
+			position: absolute;
+			display: block;
+			width: 100%;
+			margin: 0 2rem;
+			padding: 0;
+			/* text-align: center; */
+			white-space: nowrap;
+			color: #fff;
+		}
+		.mui-top .mui-icon {
+			font-size: 1.4rem;
+			position: relative;
+			z-index: 20;
+			padding-top: 1.1rem;
+			padding-bottom: 0.5rem;
+			color: #FFF;
+		}
+		main a {
+			margin: 1.5rem auto;
+			height: 1.8rem;
+			line-height: 1.6rem;
+			width: 30%;
+			padding: 0.15rem 0.3rem;
+			min-width: 5.8rem;
+			max-width: 6rem;
+			text-align: center;
+			display: block;
+			color: #fff;
+			background-color: #9A082C;
+			white-space: nowrap;
+			font-family: "微软雅黑";
+		}
+		.address_now {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.3)
+		}
+	</style>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+</head>
+<body>
+	<header class="mui-top mui-bar-nav">
+		<a href="personalCenter2.html" class=" mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-tit">地址管理</h1>
+	</header>
+	<main class="mb">
+		<a href="address.html">添加新地址</a>
+	</main>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</body>
+<script>
+	//跳转首页
+	var request = {
+		QueryString: function (val) {
+			var uri = window.location.search;
+			var re = new RegExp("" + val + "=([^&?]*)", "ig");
+			return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+		}
+	}
+	var rurl = request.QueryString("str");
+</script>
+</html>
