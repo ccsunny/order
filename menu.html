@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <title>菜单</title>
+    <script src="mui-master/dist/js/mui.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link href="mui-master/dist/css/mui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav" style="background-color: #9D4949;">
+    <a href="#" onClick="javascript:location.href=rurl+'.html';" class="mui-icon mui-icon-back" style="color: #fff;"></a>
+    <h1 class="mui-title" style="color: #fff;">菜单</h1>
+    <a class="mui-icon mui-icon-settings mui-pull-right very" style="color: #fff;"></a>
+    <a class="mui-icon mui-icon-home mui-pull-right" style="color: #fff;"></a>
+</header>
+<div class="mui-content">
+</div>
+<ul class="mui-table-view">
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                鱼香鸡柳丝饭
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>蚂蚁、大树、生姜、香芹、白砂糖</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                辣子鸡丁
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>土鸡、红葱头、生姜、香芹</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                农家一碗香
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>辣椒、肥牛、生姜、香芹、白砂糖</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                蚂蚁上树
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>土鸡、红葱头、生姜、香芹</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                农家四汇
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>土鸡、红葱头、生姜、香芹</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                酱香排骨
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>排骨、龙骨、生姜、香芹、白砂糖</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                农家四汇
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>排骨、龙骨、生姜、香芹、白砂糖</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left new" src="./images/caidan5.gif">
+            <div class="mui-media-body vive">
+                辣子鸡丁
+                <p class="f_right times">2017-8-27</p>
+                <p class='mui-ellipsis'>排骨、龙骨、生姜、香芹、白砂糖</p>
+                <p class="f_bottom">15元</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<script type="text/javascript">
+	//跳转首页
+	 var request =
+        {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+    var rurl = request.QueryString("str");
+</script>
+<script src="./js/jquery-1.12.2.min.js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>
