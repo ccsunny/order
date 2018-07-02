@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="font-size: 100px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>完善地址</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/customerInfo.css" />
+	<script src="js/jquery-1.12.2.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/order.js"></script>
+	<script type="text/javascript">
+		mui.init();
+	</script>
+</head>
+<body>
+	<!--网站顶部通栏-->
+	<header class="customer_addr">
+		<a href="orderConfirm.html">
+			<h3>完善地址</h3>
+		</a>
+	</header>
+	<!--表单验证-->
+	<form action="#" class="customerInfo" method="get">
+		<span class="txt_name"></span>
+		<input type="text" class="name" name="txtName" placeholder="填写联系人姓名" />
+		<span class="nameMsg"></span>
+		<span class="txt_Tel"></span>
+		<input type="tel" class="tel" name="txtTel" value="13888888888" />
+		<span class="telMsg"></span>
+		<input type="address" class="txt" name="txt" value="安徽省合肥市安庆市人民路7号" />
+		<br />
+		<span class="txt_info"></span>
+		<input type="text" class="address" name="txtAddress" placeholder="请输入详细地址（如8栋106室）" />
+		<br />
+		<input type="submit" class="sure" />
+	</form>
+</body>
+</html>
