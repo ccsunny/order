@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>注册账号</title>
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<style>
+		.ui-page-login,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.mui-bar {
+			position: fixed;
+			z-index: 10;
+			right: 0;
+			left: 0;
+			height: 4.8rem;
+			padding-right: 0.6rem;
+			padding-left: 0.5rem;
+			border-bottom: 0;
+			background-color: #9D4949;
+			-webkit-box-shadow: 0 0 0.05rem rgba(0, 0, 0, .85);
+			box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+		.mui-title {
+			font-size: 1.2rem;
+			font-weight: 500;
+			line-height: 2.8rem;
+			position: absolute;
+			display: block;
+			width: 100%;
+			margin: 0 -0.5rem;
+			padding: 1.0rem;
+			text-align: center;
+			white-space: nowrap;
+			color: white;
+			font-family: "微软雅黑";
+		}
+		.mui-bar-nav~.mui-content {
+			padding-top: 5rem;
+		}
+		.mui-content {
+			height: 100%;
+			background-color: #EFEFEF;
+		}
+		.area {
+			margin: 1rem auto 0 auto;
+		}
+		.mui-input-groups {
+			margin-top: 0.6rem;
+			background-color: #F3F3F3;
+		}
+		.mui-input-row {
+			border-left: 1px solid #D1CDCD;
+			border-right: 1px solid #D1CDCD;
+			border-bottom: 1px solid #B8B0AF;
+			border-top: 1px solid #B8B0AF;
+			border-radius: 4px;
+			height: 3rem;
+			background-color: #DFD9D9;
+			margin-left: 0.75rem;
+			margin-right: 0.75rem;
+		}
+		.mui-input-row:nth-child(2) {
+			width: 61%;
+			float: left;
+			margin-bottom: 20px;
+		}
+		.mui-input-row label~input,
+		.mui-input-row label~select,
+		.mui-input-row label~textarea {
+			float: right;
+			width: 83%;
+			margin-bottom: 0;
+			padding-left: 0;
+			border: 0;
+		}
+		#texts {
+			padding-left: 1.5rem;
+		}
+		.txs-btn {
+			height: 2.7rem;
+		}
+		.btn_r {
+			width: 30%;
+			float: right;
+			margin-top: 20px;
+			margin-right: 5px;
+		}
+		.mui-input-row:last-child {
+			margin-top: 20px;
+			background-color: #DFD9D9;
+		}
+		.mui-input-row:nth-child(2) {
+			margin-top: 20px;
+		}
+		/*.pass-box{
+				margin-top: ;
+			}
+			*/
+
+		.mui-input-groups:first-child {
+			margin-top: 20px;
+		}
+
+		.mui-input-groups label {
+			width: 15%;
+		}
+
+		.mui-input-groups:before {
+			border: none;
+		}
+
+		.mui-input-groups:after {
+			border: none;
+		}
+		.mui-input-row label {
+			font-family: 'Helvetica Neue', Helvetica, sans-serif;
+			line-height: 1.1;
+			float: left;
+			width: 12%;
+			padding: 8px 10px;
+			margin-left: 10px;
+			/*padding: 11px 15px;*/
+		}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 78%;
+			}
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			.mui-content-padded {
+				margin-top: 25px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			.link-area {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+			}
+			.spliter {
+				color: #bbb;
+				padding: 0px 8px;
+			}
+			.oauth-area {
+				position: absolute;
+				bottom: 1rem;
+				left: 0;
+				text-align: center;
+				width: 100%;
+				padding: 0;
+				margin: 0px;
+			}
+			.oauth-area .oauth-btn {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				background-size: 30px 30px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				margin: 0px 20px;
+				/*-webkit-filter: grayscale(100%); */
+				border: solid 1px #ddd;
+				border-radius: 25px;
+			}
+			.oauth-area .oauth-btn:active {
+				border: solid 1px #aaa;
+			}
+			.oauth-area .oauth-btn.disabled {
+				background-color: #ddd;
+			}
+			.mui-btn-block {
+				font-size: 18px;
+				display: block;
+				width: 100%;
+				margin-bottom: 10px;
+				padding: 15px 0;
+				/*border: 1px solid red;*/
+			}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a href="login.html" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="top: 50%;
+    margin-top: -22px;
+    color: #fff;"></a>
+		<h1 class="mui-title">注册账号</h1>
+	</header>
+	<div class="mui-content">
+		<form id='login-form' class="mui-input-groups">
+			<div class="mui-input-row">
+				<label>
+					<div class="mui-icon mui-icon-phone"></div>
+				</label>
+				<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入手机号">
+			</div>
+			<div class="mui-input-row">
+				<label>
+					<div class="mui-icon mui-icon-compose"></div>
+				</label>
+				<input id='texts' type="text" class="mui-input-clear mui-input" placeholder="请输入验证码">
+			</div>
+			<div class="btn_r">
+				<input type="button" value="发送验证码" class="txs-btn" style="background-color: #B3ABA9;" />
+				<button class="btn btn-small reset-code" id="J_resetCode" style="display:none;">
+					<span id="J_second">60</span>秒后重发</button>
+			</div>
+			<div class="mui-input-row pass-box">
+				<label>
+					<div class="mui-icon mui-icon-locked"></div>
+				</label>
+				<input id='password' type="password" class="mui-input-clear mui-input " placeholder="请输入密码">
+			</div>
+		</form>
+		<form class="mui-input-groups">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell">
+					自动登录
+					<div id="autoLogin" class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</form>
+		<div class="mui-content-padded">
+			<button id='login' class="mui-btn mui-btn-block mui-btn-primary primarys" style="background-color: #9A082C; border:none;">注册</button>
+			<!--<div class="link-area">
+					<a id='reg'>注册账号</a> <span class="spliter">|</span>
+					<a href="forget.html" id='forgetPassword'>忘记密码</a>
+				</div>-->
+		</div>
+		<div class="mui-content-padded oauth-area">
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.enterfocus.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		var login = document.querySelector("#login");
+		login.onclick = function () {
+			var check = true;
+			var flag = true;
+			mui("#password").each(function () {
+				if (!this.value || this.value.trim() == "") {
+					var label = this.previousElementSibling;
+					mui.alert("密码不允许为空");
+					flag = false;
+					return false;
+				}
+			})
+			mui("#account").each(function () {
+				//若当前input为空，则alert提醒 
+				if (!this.value || this.value.trim() == "") {
+					var label = this.previousElementSibling;
+					mui.alert("手机号不允许为空");
+					check = false;
+					return false;
+				}
+			}); //校验通过，继续执行业务逻辑
+			if (check && flag) {
+				mui.alert("验证通过!")
+				var acc = document.getElementById("account").value;
+				localStorage.account = acc;
+				//window.localStorage.setItem("key", acc);
+				var tx = document.getElementById("texts").value;
+				window.localStorage.setItem("k", tx);
+				var psw = document.getElementById("password").value;
+				window.localStorage.ke = "psw";
+			}
+		}
+		//倒计时
+		var J_getCode = document.querySelector(".txs-btn");
+		var J_second = document.getElementById('J_second');
+		var J_resetCode = document.getElementById('J_resetCode');
+		J_getCode.onclick = function () {
+			J_getCode.style.display = 'none';
+			J_getCode.style.height = 0;
+			J_second.innerHTML = '60';
+			J_resetCode.style.display = 'block';
+			var second = 60;
+			var timer = null;
+			timer = setInterval(function () {
+				second -= 1;
+				if (second > 0) {
+					J_second.innerHTML = second;
+				} else {
+					clearInterval(timer);
+					J_getCode.style.display = 'block';
+					J_resetCode.style.display = 'none';
+				}
+			}, 1000);
+		}
+		//正则表达式
+		//		var one=document.querySelector('.one');
+		//		var inpMobile=one.querySelector('input');
+		//		var tip=document.getElementById('tip');
+		//		var regMobile = /^(13[0-9]|14[57]|15[0-9]|17[1456789]|18[0-9])\d{8}$/;		
+		//		check(inpMobile,regMobile);
+		//		var isPhone=1;
+		//		function check(inp, regEx) {	
+		//	        inp.onblur=function () {
+		//	        	isPhone=1;
+		//	        	if(inp==''){
+		//	        		tip.innerHTML='!请输入手机号码';
+		//	        		tip.style.color="red";
+		//					isPhone = 0;
+		//					return;
+		//	        	}
+		//	        	else if (!regEx.test(this.value)) {
+		//	                tip.innerHTML='!请输入正确的手机号码';
+		//					isPhone = 0;
+		//	                tip.style.color="red";
+		//	                return;
+		//	            }
+		//	        }
+		//  	}
+	</script>
+</body>
+</html>
