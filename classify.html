@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/classify.css" />
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav topNav">
+        <a href="#" onClick="javascript:location.href=rurl+'.html';" class="mui-icon mui-icon-back mui-icon-left-nav mui-pull-left backIcon"></a>
+        <!--<a class="mui-icon mui-icon-back mui-icon-left-nav mui-pull-left backIcon"></a>-->
+        <h1 class="mui-title classify">分类</h1>
+    </header>
+    <div class="mui-content1">
+        <div class="pdBox">
+            <a href="#">
+                <img src="images/pics/kind1.jpg" alt="" />
+                <p>商务快餐</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind2.jpg" alt="" />
+                <p>单品快餐</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind3.jpg" alt="" />
+                <p>精选小炒</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind4.jpg" alt="" />
+                <p>美味甜品</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind5.jpg" alt="" />
+                <p>饮料</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind6.jpg" alt="" />
+                <p>水花面</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind7.jpg" alt="" />
+                <p>鸡腿饭</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind8.jpg" alt="" />
+                <p>常见主食</p>
+            </a>
+            <a href="#">
+                <img src="images/pics/kind9.jpg" alt="" />
+                <p>烘焙甜品</p>
+            </a>
+
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script type="text/javascript">
+        //			mui.init()
+        var html = document.getElementsByTagName('html')[0];
+        var width = window.innerWidth;
+        var fontSize = 100 / 720 * width;
+        html.style.fontSize = fontSize + 'px';
+        window.onresize = function () {
+            var html = document.getElementsByTagName('html')[0];
+            var width = window.innerWidth;
+            var fontSize = 100 / 720 * width;
+            html.style.fontSize = fontSize + 'px';
+        }
+        var request = {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+        var rurl = request.QueryString("str");
+    </script>
+</body>
+
+</html>
