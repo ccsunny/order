@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>忘记密码</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/forget.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">忘记密码</h1>
+	</header>
+	<div class="inp">
+		<div class="big">
+			<div class="one ">
+				<input type="text" placeholder="请输入手机号码" id="u_code1">
+				<div id="tip"></div>
+				<span class="mui-icon mui-icon-phone">
+			</div>
+
+			<div class="mui-input-row email ">
+				<input type="text" placeholder="请输入短信验证码" id="u_code">
+				<span class="mui-icon  mui-icon mui-icon-email">
+			</div>
+			<div class="center">
+				<button class="btn btn-small get-code send" id="J_getCode">获取验证码</button>
+				<button class="btn btn-small reset-code" id="J_resetCode" style="display:none;">
+					<span id="J_second">60</span>秒后重发</button>
+			</div>
+			<div class="small">
+				<input type="password" placeholder="请输入新密码" id="u_code">
+				<span class="mui-icon mui-icon-compose">
+			</div>
+			<button class="finish">提交</button>
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<script type="text/javascript">
+		var one = document.querySelector('.one');
+		var inpMobile = one.querySelector('input');
+		var tip = document.getElementById('tip');
+		var regMobile = /^(13[0-9]|14[57]|15[0-9]|17[1456789]|18[0-9])\d{8}$/;
+		check(inpMobile, regMobile);
+		var isPhone = 1;
+
+		function check(inp, regEx) {
+			inp.onblur = function () {
+				isPhone = 1;
+				if (inp == "") {
+					alert("请输入手机号码");
+					isPhone = 0;
+					return;
+				} else if (!regEx.test(this.value)) {
+					alert("请输入正确的手机号码")
+					isPhone = 0;
+					return;
+				}
+			}
+		}
+		var J_getCode = document.getElementById('J_getCode');
+		var J_second = document.getElementById('J_second');
+		var J_resetCode = document.getElementById('J_resetCode');
+		J_getCode.onclick = function () {
+			J_getCode.style.display = 'none';
+			J_second.innerHTML = '60';
+			J_resetCode.style.display = 'block';
+			var second = 60;
+			var timer = null;
+			timer = setInterval(function () {
+				second -= 1;
+				if (second > 0) {
+					J_second.innerHTML = second;
+				} else {
+					clearInterval(timer);
+					J_getCode.style.display = 'block';
+					J_resetCode.style.display = 'none';
+				}
+			}, 1000);
+		}
+		var small = document.querySelector('.small');
+		var psword = small.querySelector('input');
+		psword.onkeyup = function () {
+			password(psword.value);
+		}
+
+		function password(w, id) {
+			if ("" == w || !w) {
+				alert('请输入密码!');
+			} else if (w.length < 6) {
+				mui.toast('密码至少大于等于6位!');
+			} else if (w.length > 20) {
+				mui.toast('密码不能超过20位!');
+			} else if (w) {
+				var reg = /^[0-9a-zA-Z]+$/;
+				if (reg.test(w)) return true;
+				mui.toast("密码只能由数字和字母组成");
+			}
+			return false;
+		}
+		var send = document.querySelector(".finish");
+		var email = document.querySelector('.email');
+		var inp2 = email.querySelector('input');
+		send.onclick = function () {
+			flag = false;
+			if (inpMobile.value === "") {
+				alert("请输入手机号码");
+				flag = false;
+			}
+
+			if (inp2.value === "") {
+				alert("请输入验证码");
+				flag = false;
+			}
+			if (psword.value === "") {
+				alert("请输入密码");
+				flag = false;
+			} else if (!flag) {
+				location.href = "login.html"
+			}
+		}
+	</script>
+</body>
+</html>
