@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>店铺详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="js/mui.min.js"></script>
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/details.css" />
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav ">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">店铺详情</h1>
+	</header>
+	<div class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="images/bg4.png" />
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/bg1.png" />
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/bg2.png" />
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/bg3.png" />
+				</a>
+			</div>
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/bg4.png" />
+				</a>
+			</div>
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="images/bg1.png" />
+				</a>
+			</div>
+		</div>
+		<div class="re-name ">
+			<img src="images/restaurant2.bmp" alt="#" />
+			<span>喜来登餐厅</span>
+		</div>
+	</div>
+	<ul class="mui-table-view">
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" src="images/details1.bmp">
+				<p>营业时间:08:30-24:00 </p>
+				<p>配送时间:1:00-14:00 </p>
+				<p> 人气:120 </p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="price-time">
+		<div class="pt-left   f_left">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" style="height: 26px;" src="images/bike.png">
+				<p class="red">20元</p>
+				<p>起送价</p>
+			</a>
+		</div>
+		<div class="pt-left   f_left">
+			<a href="javascript:;">
+				<img class="mui-media-object mui-pull-left" style="height: 26px;" src="images/time.png">
+				<p class="red">30-50分钟</p>
+				<p>送餐时效</p>
+			</a>
+		</div>
+	</div>
+	<div class="mui-content" id="mui-content">
+		<div class="mui-row">
+			<div class="mui-col-xs-12">
+				<li class="mui-table-view-cell">
+					<a class="mui-action-back mui-icon mui-icon-map mui-pull-left"></a>
+					<span class="con-red">花果山水帘洞最大的洞口</span>
+
+				</li>
+			</div>
+			<div class="mui-col-xs-12">
+				<li class="mui-table-view-cell">
+					<a class="mui-action-back mui-icon mui-icon-phone mui-pull-left"></a>
+					<span class="con-red">
+						<a href="tel:0871-65482145">0871-65482145,65485689</a>
+					</span>
+
+					<a class="mui-action-back mui-icon mui-icon-arrowright mui-pull-right"></a>
+				</li>
+			</div>
+			<div class="mui-col-xs-12">
+				<li class="mui-table-view-cell">
+					<a class="mui-action-back mui-icon mui-icon-minus mui-spin mui-pull-left"></a>
+					<span class="con-red">活动正在策划中......</span>
+				</li>
+			</div>
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+</body>
+</html>
