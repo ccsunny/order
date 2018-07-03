@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>搜索</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/foodsearch.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<div>
+			<span class="mui-icon mui-icon-search"></span>
+			<input type="text" placeholder="请输入商家或者商品名称" />
+		</div>
+		<a href="#" onClick="javascript:window.history.go(-1)">
+			<i>取消</i>
+		</a>
+	</header>
+	<div class="history">
+		<h5>历史记录</h5>
+		<span class="mui-icon mui-icon-trash" id="remove"></span>
+		<div class="ht">
+			<a class="jiao">
+				<span class="mui-icon mui-icon-home"></span>
+				<span>九先生水饺</span>
+			</a>
+			<a class="paigu">黄焖排骨</a>
+			<a class="dao">汀味岛</a>
+		</div>
+	</div>
+	<div class="search">
+		<h5>猜你在找</h5>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell mui-collapse mui-active">
+				<a class="mui-navigate-right" href="#">
+					<div class="mg">
+						<img src="images/dan/菜单_03.jpg" alt="" />
+					</div>
+					<span>老友记黄焖鸡米饭</span>
+				</a>
+				<div class="mui-collapse-content">
+					<div class="line">
+						<div class="line1">
+							<b>减</b>
+							<i>满30减15；满70减28;满128减40</i>
+						</div>
+						<div class="line2">
+							<b>折</b>
+							<i>折扣商品4折起</i>
+						</div>
+						<div class="line3">
+							<b>首</b>
+							<i>首次使用银行卡支付最高立减3元</i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-collapse ">
+				<a class="mui-navigate-right" href="#">
+					<div class="mg">
+						<img src="images/dan/菜单_01.jpg" alt="" />
+					</div>
+					<span>赵大大鸡排</span>
+				</a>
+				<div class="mui-collapse-content">
+					<div class="line">
+						<div class="line1">
+							<b>减</b>
+							<i>满30减15；满70减28;满128减40</i>
+						</div>
+						<div class="line2">
+							<b>折</b>
+							<i>折扣商品4折起</i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="mui-table-view-cell mui-collapse">
+				<a class="mui-navigate-right" href="#">
+					<div class="mg">
+						<img src="images/dan/菜单_002.jpg" alt="" />
+					</div>
+					<span>麻辣香锅</span>
+				</a>
+				<div class="mui-collapse-content">
+					<div class="line">
+						<div class="line1">
+							<b>减</b>
+							<i>满30减15；满70减28;满128减40</i>
+						</div>
+						<div class="line2">
+							<b>折</b>
+							<i>折扣商品4折起</i>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<p>亲们地址要清楚哦，感谢新老客户支持</p>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<script type="text/javascript">
+		window.onload = function () {
+
+		}
+	</script>
+</body>
+</html>
