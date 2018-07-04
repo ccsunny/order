@@ -1,0 +1,121 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>订单确认</title>
+	<link href="css/mui.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/orderConfirm.css" />
+	<script src="js/jquery-1.12.2.js"></script>
+	<script src="js/mui.js"></script>
+	<script src="js/order.js"></script>
+</head>
+<!--顶部通栏-->
+<header class="order_confirm">
+	<a href="series.html"></a>
+	<h4>订单确认</h4>
+</header>
+<!--客户地址-->
+<div class="order_info">
+	<div class="info_left">
+		<p class="name">收货人:孙悟空</p>
+		<p class="addr">江苏省连云港市新浦区花果山水帘洞</p>
+	</div>
+	<a href="customerInfo.html" class="">完善地址</a>
+</div>
+<!--送达时间-->
+<div class="desTime">
+	<span class="first">送达时间：</span>
+	<select class="ddlType">
+		<option value="0">明天 &nbsp;&nbsp;&nbsp;10:00-10:30</option>
+		<option value="1">后天 &nbsp;&nbsp;&nbsp; 9:00-10:00</option>
+		<option value="2">今天 &nbsp;&nbsp;&nbsp; 9:00-10:00</option>
+	</select>
+	<!--<span class="day">明天</span>
+		<span class="time">10:00-10:30</span>-->
+	<span class="trig"></span>
+</div>
+<!--你的特惠-->
+<div class="order_disc">
+	<div class="order_disc_left">
+		<span class="first">您的特惠：</span>
+		<a href="javascript:;">不使用</a>
+		<a href="javascript:;" class="active">10元红包</a>
+	</div>
+	<a href="javascript:;" class="new"></a>
+</div>
+<!--其它要求-->
+<div class="order_requires">
+	<span class="first">其它要求：</span>
+	<div class="order_requires_right">
+		<span>口味选择与留言</span>
+		<a href="select.html" class=""></a>
+	</div>
+</div>
+<!--菜单-->
+<div class="order_menu">
+	<ul class="order_menu_list">
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui_img mui-pull-left" src="images/menu1.png" width="80">
+				<div class="mui-media-body">
+					<p class="name">鱼香鸡柳丝饭</p>
+					<p class="mui-ellipsis">人气:500</p>
+					<span class="price">14</span>元
+				</div>
+			</a>
+			<div class="numBox">
+				<span class="remove">-</span>
+				<input type="text" class="num" value="1" />
+				<span class="add">+</span>
+			</div>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui_img mui-pull-left" src="images/menu2.png">
+				<div class="mui-media-body">
+					<p>四喜王子</p>
+					<p class="mui-ellipsis">人气 :666</p>
+					<span class="price">9</span>元
+				</div>
+			</a>
+			<div class="numBox">
+				<span class="remove">-</span>
+				<input type="number" class="num" value="1" />
+				<span class="add">+</span>
+			</div>
+		</li>
+		<li class="mui-table-view-cell mui-media">
+			<a href="javascript:;">
+				<img class="mui_img mui-pull-left" src="images/menu1.png">
+				<div class="mui-media-body">
+					<p>农家小炒肉</p>
+					<p class="mui-ellipsis">人气:888</p>
+					<span class="price">20</span>元
+				</div>
+			</a>
+			<div class="numBox">
+				<span class="remove">-</span>
+				<input type="number" class="num" value="1" />
+				<span class="add">+</span>
+			</div>
+		</li>
+	</ul>
+</div>
+<!--立即下单-->
+<div class="countMoney">
+	共
+	<span>3</span>份,
+	<span>33</span>元
+	<span>
+		<del>43</del>
+	</span> 元 (已优惠:
+	<span>10</span>元)
+</div>
+<div class="order_submit">
+	<a href="javascript:;" class="go">立即下单</a>
+</div>
+<div class="info" style="text-align:center;color:red;"></div>
+</body>
+</html>
