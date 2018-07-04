@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>个人中心</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/personalCenter1.css" />
+</head>
+<body>
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable">
+		<!-- 菜单容器 -->
+		<aside class="mui-off-canvas-left">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll leftScroll">
+					<div class="porsonal1">
+						<ul class="mui-table-view loginBox">
+							<li class="mui-media psCenter">
+								<div class="login_box">
+									<img src="images/pics/个人中心.jpg" alt="" />
+									<div class="info">
+										<p>个人中心</p>
+										<p>您还未登录</p>
+									</div>
+									<a href="login.html" class="login">请登录</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="mui-table-view personanList">
+							<li class="mui-table-view-cell">
+								<a href="address1.html?str=personalCenter1" class="mui-navigate-right">
+									<span class="iconfont">&#xe695;</span>地址管理</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#x3433;</span>我的红包</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe60b;</span>我的代金券</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe661;</span>我的积分</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe501;</span>我的收藏</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe508;</span>消息</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe629;</span>提醒设置</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe648;</span>分享给好友</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe51d;</span>客户电话</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe603;</span>帮助中心</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right">
+									<span class="iconfont">&#xe64b;</span>系统升级</a>
+							</li>
+						</ul>
+						<div class="exitBox">
+							<button type="button" class="mui-btn mui-btn-danger exit">退出</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</aside>
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap">
+			<!-- 主页面标题 -->
+			<header class="mui-bar mui-bar-nav title">
+				<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" id="btn"></a>
+				<h1 class="mui-title">美食广场</h1>
+				<a class="mui-icon mui-icon-search mui-pull-right" href="search.html"></a>
+			</header>
+			<div class="mui-content mui-scroll-wrapper">
+				<div class="circle"></div>
+				<div class="mui-scroll">
+					<ul class="menu">
+						<li class="food_01">
+							<a href="recommend.html"></a>
+							<span>推荐
+								<br>
+								<s>推荐商家菜品</s>
+							</span>
+						</li>
+						<li class="food_02">
+							<a href="food.html"></a>
+							<span>外卖
+								<br>
+								<s>外卖菜品</s>
+							</span>
+						</li>
+						<li class="food_03">
+							<a href="menu.html?str=personalCenter1"></a>
+							<span>菜单
+								<br>
+								<s>全城菜单</s>
+							</span>
+						</li>
+						<li class="food_04">
+							<a href="classify.html?str=personalCenter1"></a>
+							<span>分类
+								<br>
+								<s>全城菜品分类</s>
+							</span>
+						</li>
+						<li class="food_05">
+							<a href="orderList.html?str=personalCenter1"></a>
+							<span>我的
+								<br>
+								<s>我的订单查询</s>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init()
+		//			mui('.mui-off-canvas-wrap').offCanvas('show');
+		//			侧滑栏默认隐藏，需要默认显示将上面代码注释去了
+		document.querySelector("#btn").addEventListener("tap", function () {
+			if (!mui('.mui-off-canvas-wrap').offCanvas().isShown()) {
+				mui('.mui-off-canvas-wrap').offCanvas('show')
+			}
+		});
+		document.querySelector(".mui-inner-wrap").addEventListener("tap", function () {
+			if (mui('.mui-off-canvas-wrap').offCanvas().isShown()) {
+				mui('.mui-off-canvas-wrap').offCanvas('close')
+			}
+		});
+		var html = document.getElementsByTagName('html')[0];
+		var width = window.innerWidth;
+		var fontSize = 100 / 640 * width;
+		html.style.fontSize = fontSize + 'px';
+		window.onresize = function () {
+			var html = document.getElementsByTagName('html')[0];
+			var width = window.innerWidth;
+			var fontSize = 100 / 640 * width;
+			html.style.fontSize = fontSize + 'px';
+		}
+
+		//a标签跳转
+		var i,
+			links = document.querySelectorAll("a");
+		for (i = 0; i < links.length; i++) {
+			links[i].addEventListener('tap', function () {
+				document.location.href = this.href;
+			});
+		}
+	</script>
+</body>
+
+</html>
