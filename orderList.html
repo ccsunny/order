@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>我的订单</title>
+	<script src="js/mui.min.js"></script>
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/orderList.css" />
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav ">
+		<a href="#" onClick="javascript:location.href=rurl+'.html';" class="mui-action-back mui-pull-left mui-icon mui-icon-bars"></a>
+		<h1 class="mui-title">我的订单</h1>
+	</header>
+	<div class="nav_tab">
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="segmented">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active mui-col-xs-6" href="#item1mobile">
+							进行中的订单
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							历史订单
+						</a>
+
+					</div>
+				</div>
+				<div class="mui-slider-group nav_tab_time">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active ">
+						<ul class="mui-table-view ">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list1.png">
+									<div class="mui-media-body">
+										鱼香鸡柳丝饭
+										<p class='mui-ellipsis'>数量1</p>
+										<span>14元</span>
+										<div class="word no-pay">未付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list2.png">
+									<div class="mui-media-body">
+										农家一碗香饭
+										<p class='mui-ellipsis'>数量1</p>
+										<span>12元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list3.png">
+									<div class="mui-media-body">
+										新奥尔良烤翅
+										<p class='mui-ellipsis'>数量1</p>
+										<span>10元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list4.png">
+									<div class="mui-media-body">
+										彩虹色的童年
+										<p class='mui-ellipsis'>数量1</p>
+										<span>22元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list5.png">
+									<div class="mui-media-body">
+										杭椒牛柳
+										<p class='mui-ellipsis'>数量1</p>
+										<span>26元</span>
+										<div class="word no-pay">未付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list6.png">
+									<div class="mui-media-body">
+										美味串串
+										<p class='mui-ellipsis'>数量1</p>
+										<span>8.8元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list7.png">
+									<div class="mui-media-body">
+										香酥土豆排骨
+										<p class='mui-ellipsis'>数量1</p>
+										<span>16元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list8.png">
+									<div class="mui-media-body">
+										墨西哥鸡肉卷
+										<p class='mui-ellipsis'>数量1</p>
+										<span>9.9元</span>
+										<div class="word no-pay">未付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list9.png">
+									<div class="mui-media-body">
+										银丝虾球
+										<p class='mui-ellipsis'>数量1</p>
+										<span>25元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content ">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list6.png">
+									<div class="mui-media-body">
+										美味串串
+										<p class='mui-ellipsis'>数量1</p>
+										<span>8.8元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list9.png">
+									<div class="mui-media-body">
+										银丝虾球
+										<p class='mui-ellipsis'>数量1</p>
+										<span>25元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list7.png">
+									<div class="mui-media-body">
+										香酥土豆排骨
+										<p class='mui-ellipsis'>数量1</p>
+										<span>16元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list8.png">
+									<div class="mui-media-body">
+										墨西哥鸡肉卷
+										<p class='mui-ellipsis'>数量1</p>
+										<span>9.9元</span>
+										<div class="word ">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list2.png">
+									<div class="mui-media-body">
+										农家一碗香饭
+										<p class='mui-ellipsis'>数量1</p>
+										<span>12元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list3.png">
+									<div class="mui-media-body">
+										新奥尔良烤翅
+										<p class='mui-ellipsis'>数量1</p>
+										<span>10元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list4.png">
+									<div class="mui-media-body">
+										彩虹色的童年
+										<p class='mui-ellipsis'>数量1</p>
+										<span>22元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list5.png">
+									<div class="mui-media-body">
+										杭椒牛柳
+										<p class='mui-ellipsis'>数量1</p>
+										<span>26元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="images/list1.png">
+									<div class="mui-media-body">
+										鱼香鸡柳丝饭
+										<p class='mui-ellipsis'>数量1</p>
+										<span>14元</span>
+										<div class="word">已付款</div>
+									</div>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		//跳转首页
+		var request = {
+			QueryString: function (val) {
+				var uri = window.location.search;
+				var re = new RegExp("" + val + "=([^&?]*)", "ig");
+				return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+			}
+		}
+		var rurl = request.QueryString("str");
+	</script>
+</body>
+
+</html>
