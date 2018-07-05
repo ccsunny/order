@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <title>我的订单</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/register.css" />
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav nav_top">
+        <a href="#" onClick="javascript:location.href=rurl+'.html';" class="mui-action-back mui-icon mui-icon mui-icon-bars mui-pull-left"></a>
+        <!--<a href="loginl.html"></a>-->
+        <h1 class="mui-title">我的订单</h1>
+    </header>
+    <div class="mui-content nav_two">
+        <div class="mui-row ">
+            <div class="mui-col-sm-6 mui-col-xs-6 nav_two_l">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        进行中的订单
+                    </a>
+                </li>
+            </div>
+            <div class="mui-col-sm-6 mui-col-xs-6">
+                <li class="mui-table-view-cell">
+                    <a class="mui-navigate-right">
+                        历史订单
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <!--导航结束-->
+    <!--tab栏切换-->
+    <div class="nav_tab">
+        <div class="mui-content">
+            <div id="slider" class="mui-slider">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" id="segmented">
+                    <div class="mui-scroll">
+                        <a class="mui-control-item mui-active" href="#item1mobile">
+                            本周
+                        </a>
+                        <a class="mui-control-item" href="#item2mobile">
+                            本月
+                        </a>
+                        <a class="mui-control-item" href="#item3mobile">
+                            自选时间
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-group nav_tab_time">
+                    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                        <ul class="mui-table-view ">
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/mine01.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">未付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/list3.png">
+                                    <div class="mui-media-body">
+                                        鸡柳鱼香丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">未付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/mine01.png">
+                                    <div class="mui-media-body">
+                                        农家一碗香饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">未付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/list6.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">未付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell mui-media">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/mine01.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">未付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="item2mobile" class="mui-slider-item mui-control-content ">
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/mine01.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">已付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/list7.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">已付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/list8.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">已付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/list9.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">已付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="images/imgs/mine01.png">
+                                    <div class="mui-media-body">
+                                        鱼香鸡柳丝饭
+                                        <p class='mui-ellipsis'>数量1</p>
+                                        <span>14元</span>
+                                        <div class="word">已付款</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="item3mobile" class="mui-slider-item mui-control-content ">
+                        <ul class="mui-table-view">
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：8:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：9:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：10:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：11:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：12:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：13:30</span>
+                            </li>
+
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：17:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：18:30</span>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <input type="checkbox" name="" id="inp_c" value="" />
+                                <span style="color: black;">送达时间：19:30</span>
+                            </li>
+                            <button id='login' class="mui-btn mui-btn-block mui-btn-primary primarys" style="background-color: #9A082C; border:none;">确认</button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //跳转首页
+        var request = {
+            QueryString: function (val) {
+                var uri = window.location.search;
+                var re = new RegExp("" + val + "=([^&?]*)", "ig");
+                return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+            }
+        }
+        var rurl = request.QueryString("str");
+    </script>
+</body>
+</html>
