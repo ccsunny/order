@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title>菜单口味选择</title>
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/mui.css" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: rosybrown;
+		}
+		h3 {
+			color: #FFF;
+			padding-top: 0.4rem;
+			text-align: center;
+		}
+		h4 {
+			color: purple;
+		}
+
+		p:nth-of-type(2n+1) {
+			color: #FFF;
+		}
+		.jd_banner {
+			max-width: 640px;
+			min-width: 320px;
+			overflow: hidden;
+			width: 100%;
+			position: relative;
+		}
+		.jd_banner ul {
+			list-style: none;
+			width: 400%;
+			transform: translateX(-10%);
+		}
+
+		.jd_banner li {
+			width: 25%;
+			float: left;
+		}
+
+		.jd_banner li a {
+			width: 100%;
+			display: block;
+		}
+		.jd_banner li a img {
+			width: 100%;
+			display: block;
+		}
+		.jd_banner ul:nth-child(2) {
+			position: absolute;
+			width: 96px;
+			height: 6px;
+			bottom: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.jd_banner ul:nth-child(2) li {
+			float: left;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			border: 1px solid #FFF;
+			margin: 0 3px;
+		}
+		.jd_banner ul:nth-child(2) li.current {
+			background-color: purple;
+		}
+	</style>
+	<script src="js/jquery-1.12.2.js"></script>
+	<script src="js/mui.js"></script>
+	<!--<script src="js/order.js"></script>-->
+</head>
+<body>
+	<!--轮播图-->
+	<h3>菜单口味选择</h3>
+	<br />
+	<br />
+	<div id="slider" class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="images/2.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/1.jpg">
+				</a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="images/2.jpg">
+				</a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="images/1.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+	<h4>菜品介绍</h4>
+	<br />
+	<br />
+	<p>象牙萝卜炖羊肉</p>
+	<br />
+	<p>
+		都说“冬吃萝卜夏吃姜” ，白萝卜含有大量的维生素和膳食纤维，所含的木质素具有抗癌的 功效， 能够开胃助消化， 特殊的淀粉酶还能促进脂肪的代谢， 其性凉的特性适合与温热的羊 肉在一起搭配做炖菜，互补营养的同时， 还能消食化痰， 白萝卜羊肉汤还能益气补虚、
+		抵御 风寒，蛋白质、维生素和矿物质含量丰富，易于人体吸收，适用于体虚胃寒者， 。羊肉从兰 州空运而来，取其精华的羊筒骨 . 脊椎骨和葱 . 姜 . 草果等药材慢熬 3 个小时后加入萝卜再炖 1 个小时上菜时加入香菜和蒜苗即可。象牙萝卜炖羊肉是冬季的经典滋补炖菜。老少皆宜。
+	</p>
+	<br />
+	<p>蕨 蔴 羊 排
+	</p>
+	<br />
+	<p>
+		人参果，俗称厥蔴，系甘南高原蔷薇科野生植物，为甘南草原著名特产之一。天然食品， 无污染，含糖量高，具有很高的营养价值。羊排的原材料取用从兰州空运来的滩羊的小排， 用古翰森的独特秘方煮熟。用大火将羊排和蕨蔴炒熟放入白胡椒 . 精盐 . 味粉等。上菜是放上
+		香菜浇上香油即可。
+	</p>
+	<script type="text/javascript">
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 3000
+		})
+	</script>
+</body>
+</html>
