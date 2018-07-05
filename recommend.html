@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<title></title>
+	<link href="css/mui.css" rel="stylesheet" />
+	<link href="css/rec_common.css" rel="stylesheet" />
+	<link href="css/recommend.css" rel="stylesheet" />
+	<link href="css/rec_iconfont.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+	<style>
+	.title .msgc {
+		font-size: 0.25rem;
+    	font-weight: 500;
+		color: #fff;
+		text-align: center;
+		line-height: 0.5rem;
+	}
+	</style>
+</head>
+<body>
+	<div class="rec_layout">
+		<header class="mui-bar mui-bar-nav">
+			<!--头部-->
+			<div class="rec_head">
+				<div class="title">
+					<ul class="mui-table-view  ">
+						<li class="mui-table-view-cell mui-collapse">
+							<a class="mui-navigate-right iconfont icon-jiantou-copy" href="#address">
+								<h1>美食广场</h1>
+							</a>
+							<div class="mui-collapse-content">
+								<h2 class="msgc">美食广场</h2>
+								<h3 class="msgc">餐饮商场</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="rec_back">
+					<a class="mui-icon mui-icon-arrowleft " href="#" onClick="javascript:window.history.go(-1)"></a>
+				</div>
+				<div class="rec_search">
+					<a class="mui-icon mui-icon-search "></a>
+				</div>
+			</div>
+			<!--导航栏-->
+			<nav class="rec_nav mui-clearfix">
+				<ul class="mui-table-view mui-clearfix">
+					<li class="mui-table-view-cell no_border mui-collapse">
+						<a class="mui-navigate-right iconfont icon-jiantou" href="#classify">分类</a>
+					</li>
+					<li class="mui-table-view-cell  mui-collapse">
+						<a class="mui-navigate-right iconfont icon-jiantou" href="#sort">默认排序</a>
+					</li>
+					<li class="mui-table-view-cell  mui-collapse">
+						<a class="mui-navigate-right iconfont icon-jiantou " href="#discount">优惠活动</a>
+					</li>
+				</ul>
+				<!--分类-->
+				<div id="classify" class="mui-popover">
+					<div class="mui-collapse-content">
+						<ul>
+							<li>
+								<a href="#">不限</a>
+							</li>
+							<li>
+								<a href="#">米饭</a>
+							</li>
+							<li>
+								<a href="#">面食米粉</a>
+							</li>
+							<li>
+								<a href="#">面包甜点</a>
+							</li>
+							<li>
+								<a href="#">饮品</a>
+							</li>
+							<li>
+								<a href="#">小吃</a>
+							</li>
+							<li>
+								<a href="#">靓汤</a>
+							</li>
+							<li>
+								<a href="#">粥类</a>
+							</li>
+							<li>
+								<a href="#">小炒</a>
+							</li>
+							<li>
+								<a href="#">凉菜</a>
+							</li>
+							<li>
+								<a href="#">水果</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--默认排序-->
+				<div id="sort" class="mui-popover">
+					<div class="mui-collapse-content">
+						<ul>
+							<li>
+								<a href="#">距离最近</a>
+							</li>
+							<li>
+								<a href="#">人气最高</a>
+							</li>
+							<li>
+								<a href="#">起送价最低</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--优惠活动-->
+				<div id="discount" class="mui-popover">
+					<div class="mui-collapse-content">
+						<ul>
+							<li>
+								<a href="#">全部优惠</a>
+							</li>
+							<li>
+								<a href="#">商家优惠</a>
+							</li>
+							<li>
+								<a href="#">免费配送</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</nav>
+
+		</header>
+
+		<!--内容-->
+		<div class="mui-content">
+			<div class="rec_container">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="rec-bread.html">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>1Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>1Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>1Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>3Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>0.5Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="#">
+							<img class="mui-media-object mui-pull-left" src="images/ms.jpg">
+							<div class="mui-media-body rec_main">
+								<div class="rec_container_tit">
+									<h3>店家名称</h3>
+									<span>1Km</span>
+								</div>
+								<p>50元起 ｜ 免费配送 ｜ 人气：500</p>
+								<p>配送时间：10:00-20:00</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="finished">
+					<h3>全部加载完成！</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script>
+		var request = {
+			QueryString: function (val) {
+				var uri = window.location.search;
+				var re = new RegExp("" + val + "=([^&?]*)", "ig");
+				return ((uri.match(re)) ? (uri.match(re)[0].substr(val.length + 1)) : null);
+			}
+		}
+		var rurl = request.QueryString("str");
+	</script>
+
+</body>
+
+</html>
